@@ -20,12 +20,15 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.tvFpass.setOnClickListener(new View.OnClickListener() {
+        binding.tvForgotPass.setOnClickListener(v -> {
+            Intent i = new Intent(LoginActivity.this,RecorveryActivity.class);
+            startActivity(i);
+        });
+        binding.tvRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(LoginActivity.this,RecorveryActivity.class);
-                startActivity(i);
-                finish();
+                Intent r = new Intent(LoginActivity.this,RegisterActivity.class);
+                startActivity(r);
             }
         });
     }

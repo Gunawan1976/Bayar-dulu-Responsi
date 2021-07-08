@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecorveryActivity">
+    tools:context=".PaymentActivity">
 
     <Button
-        android:id="@+id/bt_recov"
+        android:id="@+id/bt_recov2"
         android:layout_width="289dp"
         android:layout_height="48dp"
         android:text="Send Email"
@@ -30,7 +30,6 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:hint="Code" />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
