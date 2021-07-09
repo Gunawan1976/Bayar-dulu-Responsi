@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MencobaSQLITEE">
-        <activity android:name=".ProfileActivity"></activity>
-        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ui.ProfileActivity"
+            android:parentActivityName=".bottom_nav"></activity>
+        <activity android:name=".ui.PaymentActivity"
+            android:parentActivityName=".bottom_nav"></activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.LoginActivity"
             android:label="Login Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,13 +26,13 @@
             android:name=".bottom_nav"
             android:label="@string/title_activity_bottom_nav" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".ui.RegisterActivity"
             android:label="Register Activity"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".ui.LoginActivity" />
         <activity
-            android:name=".RecorveryActivity"
+            android:name=".ui.RecorveryActivity"
             android:label="Recorvery Activity"
-            android:parentActivityName=".LoginActivity" />
+            android:parentActivityName=".ui.LoginActivity" />
     </application>
 
 </manifest>
